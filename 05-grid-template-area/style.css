@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  background-color: rgb(122, 233, 135);
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 200px auto;
+}
+
+.child {
+  background-color: rgb(46, 226, 43);
+  border: 2px rgb(53, 139, 0) solid;
+}
+
+.child:nth-child(2) {
+  background-color: honeydew;
+  /* fila iniciañ / columna incial / final final / columna final. Pueden o no usar span, es indistinto */
+  grid-area: 1 / 1 / span 3 / span 3;
+}

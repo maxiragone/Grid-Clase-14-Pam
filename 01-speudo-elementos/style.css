@@ -1,0 +1,30 @@
+p::first-letter {
+  font-size: 3em;
+}
+
+p::first-line {
+  color: blueviolet;
+}
+
+ul li {
+  display: inline;
+}
+
+/* agrega algo DESPUES del elemento */
+li::after {
+  content: " > ";
+}
+
+/* no afecta al ultimo hijo, sino solo a los demás */
+li:last-child::after {
+  content: " ";
+}
+
+ul li:hover {
+  background-color: aquamarine;
+}
+
+ul li:focus-visible {
+  background-color: rgb(19, 169, 119);
+  border: 2px rgb(44, 103, 83);
+}
